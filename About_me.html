@@ -1,5 +1,39 @@
 <!DOCTYPE html>
 <html>
-<h1>About Me</h1>
-<link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
-<p>Hi! My name is Haidee. I graduated with a Bachelor of Science in Secondary Education in 2015 and am now shifting to the IT industry. To build my skills and gain a solid foundation, I am currently taking a diploma course in Information Technology at the University of the Philippines Open University. I work as a Fulfillment Coordinator at LexisNexis France, where I manage orders, track data, and coordinate processes. This role has given me experience with systems and automation, which connects to my IT studies. I aim to apply my technical skills to improve workflows and contribute to digital solutions in the future.</p>
+<head>
+    <title>About Me</title>
+    <link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
+    <style>
+        #hidden-text {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        img {
+            cursor: pointer;
+            width: 200px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    <p>Hi! My name is Haidee. I graduated with a Bachelor of Science in Secondary Education in 2015 and am now shifting to the IT industry. To build my skills and gain a solid foundation, I am currently taking a diploma course in Information Technology at the University of the Philippines Open University. I work as a Fulfillment Coordinator at LexisNexis France, where I manage orders, track data, and coordinate processes. This role has given me experience with systems and automation, which connects to my IT studies. I aim to apply my technical skills to improve workflows and contribute to digital solutions in the future.</p>
+    
+    <img src="image.jpg" alt="Click me" onclick="revealText()"/>
+    <p id="hidden-text">Thank you for clicking! I'm excited to continue learning and growing in the IT field.</p>
+
+    <script>
+        function revealText() {
+            var hiddenText = document.getElementById('hidden-text');
+            if (hiddenText.style.display === 'none') {
+                hiddenText.style.display = 'block';
+            } else {
+                hiddenText.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
