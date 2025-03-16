@@ -22,17 +22,21 @@
     <h1>About Me</h1>
     <p>Hi! My name is Haidee. I graduated with a Bachelor of Science in Secondary Education in 2015 and am now shifting to the IT industry. To build my skills and gain a solid foundation, I am currently taking a diploma course in Information Technology at the University of the Philippines Open University. I work as a Fulfillment Coordinator at LexisNexis France, where I manage orders, track data, and coordinate processes. This role has given me experience with systems and automation, which connects to my IT studies. I aim to apply my technical skills to improve workflows and contribute to digital solutions in the future.</p>
     
-    <img src="image.jpg" alt="Click me" onclick="revealText()"/>
-    <p id="hidden-text">Thank you for clicking! I'm excited to continue learning and growing in the IT field.</p>
+    <img src="sunflower.png" alt="Click me" onclick="revealText()"/>
+    <p id="hidden-text">I love sunflowers! I also love eating apples with bagoong. :D</p>
+
+    <audio id="click-sound" src="ding.mp3"></audio>
 
     <script>
         function revealText() {
             var hiddenText = document.getElementById('hidden-text');
+            var audio = document.getElementById('click-sound');
             if (hiddenText.style.display === 'none') {
                 hiddenText.style.display = 'block';
             } else {
                 hiddenText.style.display = 'none';
             }
+            audio.play();
         }
     </script>
 </body>
